@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import RUG, { DragArea, DropArea } from 'react-upload-gallery'
+import RUG, { DropArea } from 'react-upload-gallery'
 
 
 const Image = ({
@@ -64,13 +64,13 @@ export default class App extends Component {
                             </div>
                         </div>
                         
-                        { length ? <DragArea style={style.imageArea}>
+                        { length ? <div style={style.imageArea}>
                             {
                                 image => <div>
                                     <Image {...image} />
                                 </div>
                             }
-                        </DragArea> : (
+                        </div> : (
                             <div style={isDrag ? { color: 'rgb(0, 122, 255)' } : {}}>
                                 <h1 style={style.dropAreaText}>Drop Image Here</h1>
                             </div>
