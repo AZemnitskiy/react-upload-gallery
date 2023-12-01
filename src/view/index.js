@@ -2,7 +2,6 @@ import React from "react";
 
 import List from "./List";
 import Card from "./Card";
-import DragArea from "../DragArea";
 
 const Item = (type, image) => {
   switch (type) {
@@ -22,9 +21,9 @@ export default ({ type, sorting }, images) => {
   const options = typeof sorting === "object" ? sorting : {};
 
   return sorting ? (
-    <DragArea {...options} className={className}>
+    <div {...options} className={className}>
       {image => <div className="rug-item">{Item(type, image)}</div>}
-    </DragArea>
+    </div>
   ) : (
     <div className={className}>
       {images.map((image, key) => (

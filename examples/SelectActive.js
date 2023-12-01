@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import RUG, { Card, DragArea } from 'react-upload-gallery'
+import RUG, { Card } from 'react-upload-gallery'
 
 
 class App extends Component {
@@ -16,7 +16,7 @@ class App extends Component {
                 }
             }}
         >
-            <DragArea className="rug-items __card">
+            <div className="rug-items __card">
                 { image => <div style={{ border: `1px solid ${image.selected ? 'green' : 'transparent'}` }}>
                     <Card image={image} />
 
@@ -25,7 +25,7 @@ class App extends Component {
                         <button onClick={image.remove}>Remove</button>
                     </div>
                 </div> }
-            </DragArea>
+            </div>
         </RUG>
     }
 }

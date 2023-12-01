@@ -281,11 +281,9 @@ Not many customizable features are available for the `Card` component. But if yo
 #### List
 ```javascript
 <RUG>
-  <DragArea>
   {
     (image) => <List image={image} />
   }
-  </DragArea>
 </RUG>
 ```
 #### Children

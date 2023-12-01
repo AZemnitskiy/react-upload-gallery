@@ -10,12 +10,6 @@ Object.defineProperty(exports, "Card", {
     return _Card["default"];
   }
 });
-Object.defineProperty(exports, "DragArea", {
-  enumerable: true,
-  get: function get() {
-    return _DragArea["default"];
-  }
-});
 Object.defineProperty(exports, "DropArea", {
   enumerable: true,
   get: function get() {
@@ -34,7 +28,6 @@ Object.defineProperty(exports, "default", {
     return _RUG["default"];
   }
 });
-var _DragArea = _interopRequireDefault(require("./DragArea"));
 var _DropArea = _interopRequireDefault(require("./DropArea"));
 var _Card = _interopRequireDefault(require("./view/Card"));
 var _List = _interopRequireDefault(require("./view/List"));

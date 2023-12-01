@@ -22,7 +22,6 @@ var _typeof2 = _interopRequireDefault(require("@babel/runtime/helpers/typeof"));
 var _react = _interopRequireDefault(require("react"));
 var _List = _interopRequireDefault(require("./List"));
 var _Card = _interopRequireDefault(require("./Card"));
-var _DragArea = _interopRequireDefault(require("../DragArea"));
 var Item = function Item(type, image) {
   switch (type) {
     case "card":
@@ -41,7 +40,7 @@ var _default = function _default(_ref, images) {
     sorting = _ref.sorting;
   var className = "rug-items __".concat(type, " ").concat(sorting ? "__sorting" : "");
   var options = (0, _typeof2["default"])(sorting) === "object" ? sorting : {};
-  return sorting ? /*#__PURE__*/_react["default"].createElement(_DragArea["default"], (0, _extends2["default"])({}, options, {
+  return sorting ? /*#__PURE__*/_react["default"].createElement("div", (0, _extends2["default"])({}, options, {
     className: className
   }), function (image) {
     return /*#__PURE__*/_react["default"].createElement("div", {
